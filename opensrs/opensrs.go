@@ -90,13 +90,12 @@ func (c *Client) NewRequest(method, path string, payload interface{}) (*http.Req
 //
 // If no custom user agent is provided, the default user agent is used.
 //
-//     opensrs-go/1.0
+//	opensrs-go/1.0
 //
 // If a custom user agent is provided, the final user agent is the combination of the custom user agent
 // prepended by the default user agent.
 //
-//     opensrs-go/1.0 customAgentFlag
-//
+//	opensrs-go/1.0 customAgentFlag
 func formatUserAgent(customUserAgent string) string {
 	if customUserAgent == "" {
 		return defaultUserAgent

@@ -11,7 +11,6 @@ const (
 )
 
 // Provides credentials that can be used for authenticating with OpenSRS.
-//
 type Credentials interface {
 	// Returns the HTTP headers that should be set
 	// to authenticate the HTTP Request.
